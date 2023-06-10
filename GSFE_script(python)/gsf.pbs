@@ -1,0 +1,5 @@
+#!/bin/bash
+#PBS -N 3Cg-GSF-20G
+#PBS -l nodes=1:ppn=24
+cd $PBS_O_WORKDIR
+python GSFE.py
