@@ -117,22 +117,12 @@ zh-cn
 
 # -------- (move.py) v0.0 --------
 # v0.0.0, 1st Written Mar 14, 2022. Original version. Modified for the first time.
-# v0.1.0, 1st Overhaul Mar 15, 2022. For moving atoms.
 # -------- (move.py) v1.0 --------
 # v1.0.0, 2nd Overhaul May 28, 2022. In order to apply the compressive-shear biaxial stress field to the model and calculate the stress.
-# v1.0.1, 2nd written Jul 1, 2022. Program optimization.
-# v1.0.2, 3rd written Jul 4, 2022. Program optimization.
-# v1.0.3, 4th written Aug 2, 2022. Bug fixes.
-# v1.0.4, 5th written Aug 16, 2022. Program optimization.
 # --------- (cs.py) v2.0 ---------
 # v2.0.0, 3rd Overhaul Aug 23, 2022. Program renaming & optimization.
-# v2.0.1, 2nd written Sep 6, 2022. Bug fixes.
-# v2.0.2, 3rd written Sep 7, 2022. Bug fixes.
 # --------- (CS.py) v2.1 ---------
 # v2.1.0, 4th written Feb 22, 2023. Program structure adjustment and optimization.
-# v2.1.1, 5th written Feb 28, 2023. Bug fixes & program optimization.
-# v2.1.2, 6th written Mar 2, 2023. Program optimization. Add a dual-thread mode to view the specific situation of structural changes.
-# v2.1.3, 7th written Mar 5, 2023. Bug fixes & program optimization. Eliminate potentially erroneous data.
 # v2.1.4, 8th written Mar 27, 2023. Program optimization.
 # ...
 
@@ -140,13 +130,7 @@ zh-cn
 
 # ------------- v1.0 -------------
 # v1.0.0, 1st written Sep 15, 2022. Calculate the GSFE of the crystal plane.(stress-free)
-# v1.0.1, 2nd written Oct 14, 2022. Program optimization.
-# v1.0.2, 3rd written Oct 26, 2022. Program optimization.
 # ------------- v1.1 -------------
 # v1.1.0, 1st Overhaul Nov 23, 2022. Program optimization. Add cases where compressive stress is present.
-# v1.1.1, 2nd written Nov 24, 2022. Add calculate GSFE of specific crystal direction.
-# v1.1.2, 3rd written Nov 25, 2022. Program optimization.
-# v1.1.3, 4th written Dec 10, 2022. Bug fixes.
-# v1.1.4, 5th written Dec 12, 2022. Bug fixes.
 # v1.1.5, 6th written Mar 28, 2023. Program optimization. Add broad applicability.
 # ...
