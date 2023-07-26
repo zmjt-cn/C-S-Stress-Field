@@ -1,0 +1,20 @@
+<< cellname		sigma_0	iforder	ifanimation >>
+POSCAR	POSCAR_new	0	1	1
+<< ds/epsilon_xx	e=absolute_error_range/GPa >>
+0.01	0.2
+<< stepy	stepz	layer0	angle >>
+12	12	21	non
+<< step	layer1	distance_agl >>
+24	21	2.52
+mpirun  -np 24  /opt/software/vasp.5.4.4.xx/bin/vasp_std >out.log
+mpirun  -np 24  vasp_ncl >out.log
+#==================== Parameter Description: ====================
+    # This file is a necessary input file. Lines starting with '#' are comment lines, while the rest of the lines are parameters.
+    # ATTENTION: The generalized stacking fault energy (GSFE) under the compressive stress field used by this program is based on calculations in VASP software. If you want to use this program successfully, you need to install VASP software locally, including the 'vasp_5.4.4.xx' software indicated in line 9 for the unrelaxed strain tensor epsilon_xx and the uncompiled basic version 'vasp_ncl' software indicated in line 10.
+    # Parameter setting in line 2: Please do not modify the first two parameters. The third parameter is the set compressive stress parameter 'sigma_0' in units of GPa. If input is '0', the calculation is the classical GSFE without compressive stress. The fourth parameter is whether to transform the coordinate system of the crystal cell. Set to '1' to transform the crystal plane from z-axis to the x-axis for calculation and fix the atoms of 'POSCAR', and set to '0' if not required. The fifth parameter is whether to open the animation archive of CONTCAR. It is the same as the setting of 'iforder'. Set to '1' to open and set to '0' to close.
+    # Parameter setting in line 4: The first parameter is the increment of the strain epsilon_xx in the direction perpendicular to the stacking fault plane, with a default value of 0.01. The second parameter is the absolute error of the set compressive stress 'sigma_0', defaults to 0.2GPa.
+    # Parameter setting in line 6: This line contains parameters for the calculation of GSFE-surface. The first and second parameters are the number of sampling points in the b and c directions, with higher density leading to higher accuracy. The third parameter is the layer (atom) of the crystal at which the calculation begins. If set to 21, all atoms beyond this layer (atom) will be moved. The fourth parameter is the angle between the specific crystal direction and the b lattice vector. Select 'non' to calculate GSFE-surface, while select '1/2' or other fraction to enable the calculation of the GSFE for a specific crystal direction. In this case, the parameters in line 8 will be used and the program will not perform GSFE-surface calculation.
+    # Parameter setting in line 8: This line contains parameters for the calculation of GSFE for a specific crystal direction. The first parameter is the number of sampling points, with higher density leading to higher accuracy. The second parameter is the layer (atom) of the crystal at which the move begins, consistent with the setting of the GSFE-surface parameters (line 6). The third parameter is the distance of the stacking fault, i.e., the distance of the stacking fault in the pi/2 direction. It is generally set to one period, but the exact value should be measured to determine the stacking fault distance. This parameter can be set to a decimal.
+    # Lines 9 and 10 are command lines for calling VASP software. Line 9 calls the unrelaxed strain tensor epsilon_xx in VASP software 'vasp.5.4.4.xx' (used for calculating the GSFE under compressive stress), while line 10 calls the uncompiled basic version 'vasp_ncl' (for classical GSFE calculation when the compressive stress is set to 0). Modify the statements after '24' based on your software installation location.
+    # If you are using a remote supercomputing server, the number of 'cores' in lines 9 and 10 should match those in the PBS file; otherwise, the program may fail to calculate.
+# Thank you for using! Feedback is always welcome!

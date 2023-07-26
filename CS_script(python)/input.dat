@@ -1,0 +1,19 @@
+<< cellname		sigma_0	iforder	ifthread	ifanimation >>
+POSCAR	POSCAR_new	20	1	0	1
+<< ds/epsilon_xz	dds/epsilon_xx	e=absolute_error_range/GPa >>
+0.005	0.002	0.2
+<< theta	start	end	rad/*math.pi/means:0pi/12->8pi/12_interval=1pi/12 >>
+1/12	0	8
+0	100	#start&end_step
+mpirun  -np 24  /opt/software/vasp.5.4.4.xxxz/bin/vasp_std >out.log
+mpirun  -np 24  /opt/software/vasp.5.4.4.xz/bin/vasp_std >out.log
+#==================== Parameter Description: ====================
+    # This is a necessary input file. Lines starting with '#' are comments, while the other lines denote parameters.
+    # ATTENTION: This program applies a compressive-shear biaxial stress field based on VASP software calculation. To use this program successfully, you need to install VASP software locally. This includes the software 'vasp.5.4.4.xxxz' for the unrelaxed strain tensor epsilon_xx and epsilon_xz denoted in line 8, and the software 'vasp.5.4.4.xz' for the unrelaxed strain tensor epsilon_xz denoted in line 9.
+    # Line 2 parameter settings: Please do not modify the first two parameters. The third parameter sets the set compressive stress parameter 'sigma_0', with units in GPa. If set to '0', it computes simple shear without compressive stress. The fourth parameter determines whether to perform coordinate transformation on the crystal cell, with '1' denoting convert the crystal plane from z-axis to x-axis. If not needed, set to '0'. Parameters 5 and 6 determine whether to enable double-thread mode and animation archives of CONTCAR, respectively. Set to '1' to enable, or '0' to disable, consistent with the iforder setting.
+    # Line 4 parameter settings: The first parameter specifies the increment in 'epsilon_xz' for shear direction and defaults to 0.01. The second parameter denotes the increment in 'epsilon_xx' for compressive direction and defaults to 0.002. The third parameter sets the absolute error limit of the set compressive stress 'sigma_0' at 0.2 GPa.
+    # Line 6 parameter settings: The sixth line defines the rotation angle and rotation range of the crystal direction. The 1st parameter, 'theta' (in radians), is set as a fraction. E.g., '1/12' denotes pi/12 (i.e., 15 degrees). The second and third parameters specify the start and end ranges of rotation, e.g., 0 and 8 represents rotates 8 times in total, calculating 9 crystal directions with an interval size of pi/12, starting from 0pi/12 and ending at 8pi/12. Attention: Do not set angles or any parameters in this line to negative values, or the program will report an 'error' while creating folders, which prevents the program from running!!!
+    # Line 7 parameter settings: This line denotes the number of steps for initial and final shear strain. It defaults to 0 and 100, respectively. You can set 'start_step' to a non-zero number to continue the previous calculations. For instance, if the first calculation stopped at step 30, you can perform subsequent calculations by extracting the results of Step 30 in the second calculation, instead of starting from 0 again, by setting the 'start_step' to 30. If start and end steps are equal, the program skips shear calculations and proceeds to data extraction.
+    # Lines 8 and 9 contain command lines for calling VASP software. The 8th line calls the strain tensor epsilon_xx and epsilon_xz non-relaxation 'vasp.5.4.4.xxxz', whereas the 9th line calls the strain tensor epsilon_xz non-relaxation 'vasp.5.4.4.xz' for calculations involving simple shear stress field and when the compressive stress is set to 0. Modify the statements after '24' based on your software installation location.
+    # If you are using a remote supercomputing server, the number of 'cores' in lines 8 and 9 should match those in the PBS file; otherwise, the program may fail to calculate.
+# Thank you for using! Feedback is always welcome!
