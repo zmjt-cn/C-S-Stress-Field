@@ -4,13 +4,14 @@
 =========Version V2.1.4=========
 ============20230327============
 
-Authors: Ren Yabin (任亚斌), Yang Bo (杨波)
-Address: School of Mechanical Engineering, Hebei University of Technology, Tianjin 300401, People's Republic of China
-Emails: <s1345358@126.com>, <boyang@hebut.edu.cn>
-Licence: Apache License 2.0
-
 en-us
 {
+Authors: Ren Yabin(zmjt-cn), Yang Bo
+Address: School of Mechanical Engineering, Hebei University of Technology, Tianjin 300401, People's Republic of China
+Emails:  <s1345358@126.com>, <boyang@hebut.edu.cn>
+Webside: https://github.com/zmjt-cn/C-S-Stress-Field
+Licence: Apache License 2.0
+
 To apply a compressive-shear biaxial stress field to the unit cell and calculate the compressive-shear stress, this program has been developed.
 
 >>The program features the following:
@@ -55,6 +56,12 @@ To apply a compressive-shear biaxial stress field to the unit cell and calculate
 
 zh-cn
 {
+作者：任亚斌(zmjt-cn)，杨波
+地址：河北工业大学机械工程学院，天津 300401，中国
+邮箱：<s1345358@126.com>，<boyang@hebut.edu.cn>
+网址：https://github.com/zmjt-cn/C-S-Stress-Field
+协议：Apache License 2.0
+
 为了对晶胞施加压缩-剪切双轴应力场，计算压缩-剪切应力，开发了本程序。
 
 >>程序已经实现的功能：

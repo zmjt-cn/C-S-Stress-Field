@@ -4,13 +4,14 @@
 =========Version V1.1.5=========
 ============20221125============
 
-Authors: Ren Yabin (任亚斌), Yang Bo (杨波)
-Address: School of Mechanical Engineering, Hebei University of Technology, Tianjin 300401, People's Republic of China
-Emails: <s1345358@126.com>, <boyang@hebut.edu.cn>
-Licence: Apache License 2.0
-
 en-us
 {
+Authors: Ren Yabin(zmjt-cn), Yang Bo
+Address: School of Mechanical Engineering, Hebei University of Technology, Tianjin 300401, People's Republic of China
+Emails:  <s1345358@126.com>, <boyang@hebut.edu.cn>
+Webside: https://github.com/zmjt-cn/C-S-Stress-Field
+Licence: Apache License 2.0
+
 To calculate generalized stacking fault energy (GSFE), (Contains cases where compressive stress is present)
 
 >> Functions implemented in the program:
@@ -29,7 +30,7 @@ To calculate generalized stacking fault energy (GSFE), (Contains cases where com
     The 'POSCAR0' file generated is a backup of the original 'POSCAR' file submitted. If you want to redo the calculation, there is no need to change any parameters or input files, the program will automatically overwrite. 'POSorder' is the file obtained after transforming the coordinates of the original 'POSCAR' file (if the parameter for 'ifanimation' is set to '1').
     The 'POSCAR_0', 'POSCAR_1', etc. files are generated when calculating the GSFE-surface. If calculating the GSFE for a specific crystal direction, only the 'POSCAR_0' file will be generated.
     The data files generated, such as '0gsf.dat', '1gsf.dat', etc., contain the calculated results of the program in units of GPa.
-    The 'cs.dat' file is the final data file, actually a collection of all data such as '0cs.dat', '1cs.dat', etc.
+    The 'gsf.dat' file is the final data file, actually a collection of all data such as '0gsf.dat', '1gsf.dat', etc.
 
 >>Introduction to the parameters of the 'input.dat' file:
     << cellname			sigma_0	iforder	ifanimation >>
@@ -56,6 +57,13 @@ To calculate generalized stacking fault energy (GSFE), (Contains cases where com
 
 zh-cn
 {
+
+作者：任亚斌(zmjt-cn)，杨波
+地址：河北工业大学机械工程学院，天津 300401，中国
+邮箱：<s1345358@126.com>，<boyang@hebut.edu.cn>
+网址：https://github.com/zmjt-cn/C-S-Stress-Field
+协议：Apache License 2.0
+
 计算广义层错能（包含了有压应力的情况）。
 
 >>程序已经实现的功能:
@@ -74,7 +82,7 @@ zh-cn
     生成的“POSCAR0”文件为提交的原始“POSCAR”文件的备份（如果想重复提交运算，所有参数与输入文件均不需要改动，程序会自动覆盖），“POSorder”为原始文件“POSCAR”坐标轮换后的文件（如果你将是否坐标转换参数设置为“1”）。
     生成的“POSCAR_0”、“POSCAR_1”等文件是计算面层错能生成的，若选择计算特定晶向层错能，只会生成“POSCAR_0”文件。
     “0gsf.dat”、“1gsf.dat”等数据文件是生成的运算结果数据，单位为GPa。
-    “cs.dat”文件是最终生成的数据文件，实际为“0cs.dat”、“1cs.dat”等所有数据的集合。
+    “cs.dat”文件是最终生成的数据文件，实际为“0gsf.dat”、“1gsf.dat”等所有数据的集合。
 
 >>“input.dat”文件的参数介绍：
     << 晶胞名称		sigma_0/单位GPa	是否坐标转换	是否开启动画 >>
