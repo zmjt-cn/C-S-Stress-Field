@@ -1,4 +1,4 @@
-
+Y. Ren, B. Yang, et al., Diam. Relat. Mater. 139 (2023) 110353, https://doi.org/10.1016/j.diamond.2023.110353.
 
 en-us
 {
