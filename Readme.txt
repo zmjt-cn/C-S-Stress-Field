@@ -1,5 +1,5 @@
 Y. Ren, B. Yang, et al., Diam. Relat. Mater. 139 (2023) 110353, https://doi.org/10.1016/j.diamond.2023.110353.
-This software is subject to software copyright: Compressive Shear Biaxial Stress Field and Generalized Layer Dislocation Energy Calculation Software, Beijing: 2023SR0892470, China
+This software is subject to copyright: Compressive Shear Biaxial Stress Field and Generalized Stacking Fault Energy Calculation Software, Beijing: 2023SR0892470, China.
 本软件享有软件著作权：压缩剪切双轴应力场及广义层错能计算软件, 北京：2023SR0892470, 中国
 
 en-us
