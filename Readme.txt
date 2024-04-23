@@ -50,7 +50,7 @@ en-us
     ================================
     ============GSFE.py=============
     ================================
-    =========Version V1.1.5=========
+    =========Version V1.1.6=========
     ============20221125============
 
     GSFE introduction:
@@ -126,7 +126,7 @@ zh-cn
     ================================
     ============GSFE.py=============
     ================================
-    =========Version V1.1.5=========
+    =========Version V1.1.6=========
     ============20221125============
 
     GSFE简介：
@@ -171,5 +171,5 @@ zh-cn
     # v1.0.0, 1st written Sep 15, 2022. Calculate the GSFE of the crystal plane.(stress-free)
     # ------------- v1.1 -------------
     # v1.1.0, 1st Overhaul Nov 23, 2022. Program optimization. Add cases where compressive stress is present.
-    # v1.1.5, 6th written Mar 28, 2023. Program optimization. Add broad applicability.
+    # v1.1.6, 5th written Apr 20, 2024. Bug fixes.
     # ...

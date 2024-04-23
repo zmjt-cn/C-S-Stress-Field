@@ -1,7 +1,7 @@
 ================================
 ============GSFE.py=============
 ================================
-=========Version V1.1.5=========
+=========Version V1.1.6=========
 ============20221125============
 
 en-us
@@ -141,4 +141,5 @@ zh-cn
 # v1.1.3, 4th written Dec 10, 2022. Bug fixes.
 # v1.1.4, 5th written Dec 12, 2022. Bug fixes.
 # v1.1.5, 6th written Mar 28, 2023. Program optimization. Add broad applicability.
+# v1.1.6, 5th written Apr 20, 2024. Bug fixes.
 # ...
