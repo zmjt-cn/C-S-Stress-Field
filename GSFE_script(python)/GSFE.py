@@ -1,5 +1,5 @@
 #!/usr/bin/python==========v2.7.5==========
-# GSFE.py==============v1.1.5==============
+# GSFE.py==============v1.1.6==============
 # ==========='To calculate GSFE'===========
 # (Contains cases where compressive stress is present)
 # Authors: Ren Yabin, Yang Bo
@@ -383,7 +383,7 @@ else: # calculations for a single crystal orientation GSFE.
         except:
             pass
         if i == 0:
-            os.system(cmd[5]) # stress-free
+            os.system(cmd[9]) # stress-free
             ratio_calculate('CONTCAR') # Calculate the true stress ratio except for the vacuum layer
             sigma_ctrl(sigma) # Control compressive stress
             os.system('cp CONTCAR POSCAR_0')
@@ -470,4 +470,5 @@ fon.close()
 # v1.1.3, 4th written Dec 10, 2022. Bug fixes.
 # v1.1.4, 5th written Dec 12, 2022. Bug fixes.
 # v1.1.5, 6th written Mar 28, 2023. Program optimization. Add broad applicability.
+# v1.1.6, 5th written Apr 20, 2024. Bug fixes.
 # ...
